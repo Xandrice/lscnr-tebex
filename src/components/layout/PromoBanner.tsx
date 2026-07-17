@@ -6,7 +6,7 @@ export function PromoBanner() {
   if (!text && !code) return null;
 
   return (
-    <div className="relative z-50 bg-surface-2/80">
+    <div className="promo-banner relative z-50 bg-surface-2/80">
       <div className="mx-auto flex max-w-[1600px] items-center justify-center gap-2 px-4 py-1.5 text-center sm:px-6">
         <p className="font-display text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           {text}

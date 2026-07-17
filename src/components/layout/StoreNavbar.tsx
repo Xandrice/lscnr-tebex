@@ -41,7 +41,7 @@ export function StoreNavbar({
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b border-border bg-background/90 chrome-blur",
+        "store-navbar sticky top-0 z-50 border-b border-border bg-background/90 chrome-blur",
         overlay && "border-border/50 bg-background/70"
       )}
     >

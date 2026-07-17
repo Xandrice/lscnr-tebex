@@ -22,14 +22,14 @@ export function SocialProofBar({ className }: { className?: string }) {
       {TRUST_STATS.map((stat) => (
         <span
           key={stat.label}
-          className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-surface/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground"
+          className="hero-proof-pill inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium"
         >
           <ShieldCheck className="h-3.5 w-3.5 text-cop" />
           {stat.label}
         </span>
       ))}
       {discordCount != null ? (
-        <span className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-surface/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground">
+        <span className="hero-proof-pill inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium">
           <Users className="h-3.5 w-3.5 text-cop" />
           {discordCount.toLocaleString()} online now
         </span>
